@@ -5,6 +5,8 @@ Parametric OpenSCAD project box that's easy to modify and print. Based on http:/
 
 Modified to have easily punched holes in the project box.
 
+![Project Box with Holes](http://i.imgur.com/xQc8stx.png "Project Box with Holes")
+
 ### Usage
 
 Create a copy of project_box.scad and use OpenSCAD to adjust parameters and add holes as desired.
