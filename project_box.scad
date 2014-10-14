@@ -158,15 +158,13 @@ module box2(in_x, in_y, in_z, shell, top_lip, top_thickness) {
 		sides(in_x, in_y, in_z, shell);
 		screws(in_x, in_y, in_z, shell);
 		hole("length_1", 4, [8, 10]);
-		hole("length_1", 4, [-8, 10]);
-		hole("length_2", 4, [8, 10]);
-		hole("length_2", 4, [-8, 10]);
+		//hole("length_1", 4, [-8, 10]);
 	}
 	lid_top_lip2(in_x, in_y, in_z, shell, top_lip, top_thickness);
 }
 
 module punch_hole(cylinder, rotate, translate_coords) {
-	translate(translate_coords) rotate (rotate) cylinder (h = cylinder[1], r=cylinder[0], center = false);
+	translate(translate_coords) rotate (rotate) cylinder (h = cylinder[1], r=cylinder[0], center = false, $fn=32);
 }
 
 module hole(side, radius, offset) {
